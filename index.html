@@ -9,7 +9,7 @@
     <meta name= "keywords" content=""/>
     <link href= "style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    
 </head>
 <body class="homepage">
 
@@ -92,6 +92,7 @@
     </section>
     <section class="quinta">
         <div id="Contato">
+            body: JSON.stringify ({
             <h2>Contato</h2>
             <form action="Contato" class="form">
                 <label >
@@ -109,7 +110,16 @@
         
                 <button type="submit" class= "btn-btn primary">Envie sua menssagen</button>
             </form>
-            
+            })
+            <script>
+                fetch('url',{
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+
+                    }
+                })
+            </script>
             <script src="script.js"></script>
             <section class= "sociais">
                 <img src= "facebook.png" width="50px", height="50px"/>
